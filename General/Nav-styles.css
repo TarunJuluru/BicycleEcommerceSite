@@ -1,0 +1,217 @@
+/*navigation starts*/
+
+nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-shadow: 0px 1px 3px rgba(47, 47, 47, .4);
+    box-shadow: 0px 1px 3px rgba(47, 47, 47, .4);
+    z-index: 2;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+nav .logo {
+    background-color: rgba(65, 122, 255, 1.0);
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    text-align: center;
+    padding: 2rem 0rem;
+}
+
+nav .hamburger {
+    display: none;
+}
+
+nav .cart {
+    background-color: #4F4F4F;
+}
+
+nav .cart:hover {
+    background-color: #F4F4F4;
+    cursor: alias;
+}
+
+nav ul {
+    list-style-type: none;
+    -webkit-box-flex: 2;
+    -ms-flex-positive: 2;
+    flex-grow: 2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+nav ul .account {
+    background-color: #000000;
+}
+
+nav ul .account a {
+    color: #F4F4F4;
+}
+
+nav .dropbox {
+    position: relative;
+}
+
+nav .dropdown {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 4.8rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+}
+
+nav .dp-list {
+    display: block;
+    text-align: center;
+    background-color: rgba(47, 47, 47, 1.0);
+}
+
+nav .dp-list a {
+    color: rgba(242, 242, 242, 1.0);
+}
+
+nav .dropbox:hover .dropdown {
+    display: block;
+}
+
+nav ul li {
+    background-color: rgba(47, 47, 47, 1.00);
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    padding: 2rem;
+    text-align: center;
+}
+
+nav ul .cart sup {
+    font-size: 0.6rem;
+    background-color: #fff;
+    padding: 0.125rem;
+    border-radius: 30%
+}
+
+nav ul li a,
+.logo a {
+    font-size: 1rem;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: lato;
+    letter-spacing: 0.1rem;
+    color: rgba(255, 255, 255, 1.00);
+}
+
+nav ul li a:hover,
+.logo a:hover {
+    color: rgba(192, 192, 192, 1.00);
+}
+
+nav .logo a {
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+}
+
+nav ul li.active {
+    background-color: #fff;
+}
+
+nav ul li.active a {
+    color: #000;
+}
+
+.back-to-top a {
+    text-decoration: none;
+    background-color: rgba(65, 122, 255, 1.0);
+    color: aliceblue;
+    padding: .4rem;
+    border-radius: .2rem;
+    position: fixed;
+    bottom: 6rem;
+    right: 4rem;
+    font-size: .8rem;
+    text-transform: uppercase;
+    font-family: monospace;
+    opacity: .4;
+}
+
+.back-to-top a:hover {
+    opacity: 1;
+    transition: opacity 800ms ease-in 0s;
+}
+
+@media only screen and (max-width: 1024px) {
+    .promotion {
+        display: none;
+    }
+    nav {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+    }
+
+    nav #on-click-menu-icon {
+        display: flex;
+        font-size: 0;
+    }
+
+    nav #on-click-menu-icon .logo {
+        display: inline-block;
+        width: 50%;
+        font-size: 16px;
+    }
+
+    nav #on-click-menu-icon .hamburger {
+        display: inline-block;
+        width: 50%;
+        font-size: 16px;
+        text-align: center;
+        background-color: rgba(65, 122, 255, 1.0);
+        padding: 1rem 0rem;
+        background-color: #000000;
+    }
+
+    nav #on-click-menu-icon .hamburger:hover {
+        cursor: pointer;
+    }
+
+    nav #on-click-menu-icon .hamburger img {
+        width: 30px;
+        height: auto;
+        margin-top: 10px;
+    }
+
+    nav {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    nav ul#on-click-menu-list {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        z-index: 2;
+        position: relative;
+    }
+    nav .dropdown {
+        margin: 8px 0px 0px 0px;
+    }
+    nav ul#on-click-menu-list li {
+        padding: 3rem 0rem;
+    }
+}
+
+/*navigation ends*/

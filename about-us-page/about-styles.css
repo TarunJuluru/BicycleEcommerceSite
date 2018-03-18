@@ -1,0 +1,78 @@
+html {
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    background-color: #f2f2f2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+h2 {
+    font-weight: 200;
+    word-spacing: 0.2rem;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 40px;
+    margin-top: 14rem;
+}
+
+hr {
+    width: 20%;
+    margin: 0 auto;
+    margin-top: 2rem;
+    margin-bottom: 6rem;
+}
+
+section article {
+    display: block;
+    width: 40%;
+    margin: 0 auto;
+}
+
+section article .about-image img {
+    width: 100%;
+    height: auto;
+}
+
+section article .about-content {
+    margin: 4rem 0rem;
+}
+
+section article .about-content p {
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-family: lato;
+    font-weight: 200;
+    line-height: 1.6rem;
+}
+
+footer {
+    background-color: rgba(47, 47, 47, 1.00);
+    color: rgba(242, 242, 242, 1.0);
+    height: 4rem;
+    line-height: 4rem;
+    text-align: center;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    section article {
+        display: block;
+        width: 60%;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    section article {
+        width: 60%;
+    }
+
+    h2 {
+        margin-top: 10rem;
+    }
+}

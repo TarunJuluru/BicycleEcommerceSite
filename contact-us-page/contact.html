@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>about</title>
+    <link rel="stylesheet" href="contact-styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="../images/favicon.png" />
+    <link rel="stylesheet" href="../General/Nav-styles.css">
+    <meta name="viewport" content="width=device-width, intial-scale=1">
+</head>
+
+<body>
+
+    <header id="top">
+        <!--navigation starts-->
+        <nav>
+            <div id="on-click-menu-icon">
+                <div class="logo"><a href="../index.html">iride</a></div>
+                <div class="hamburger"><img class="open" src="../home-page/images/icons/hamburger-menu.png" alt="menu-icon">
+                    <img class="close" src="../home-page/images/icons/menu-close.png" alt="menu-icon"></div>
+            </div>
+            <ul id="on-click-menu-list">
+                <li><a href="../index.html">home</a></li>
+                <li><a href="../about-us-page/about.html">about</a></li>
+                <li class="dropbox"><a href="../blog-page/blog.html">blog</a>
+                    <ul class="dropdown">
+                        <li class="dp-list"><a href="../blog-page/blog.html">blog-1</a></li>
+                        <li class="dp-list"><a href="../blog-page/blog.html">blog-2</a></li>
+                        <li class="dp-list"><a href="../blog-page/blog.html">blog-3</a></li>
+                    </ul>
+                </li>
+                <li class="active"><a href="contact.html">contact</a></li>
+                <li class="cart"><img src="../home-page/images/icons/shopping-cart-icon-light.png" alt="shopping cast">
+                    <sup id="add-cart">0</sup>
+                </li>
+                <li class="account"><a href="../account-page/account.html">account</a></li>
+            </ul>
+        </nav>
+        <!--navigation ends-->
+    </header>
+
+    <h2>contact us</h2>
+    <hr />
+
+    <section>
+        <div class="container">
+            <p class="welcome">Want to give your customers an easy way of getting in touch with you? This clean and simple form does just that.</p>
+
+            <!--HTML5 FORM VALIDATION-->
+            <form action="" method="">
+                <fieldset>
+                    <legend>HTML5 Form Validation</legend>
+                    <label for="firstname">First Name*</label><input id="firstname" type="text" placeholder="sur name" minlength="1" value="" required autofocus>
+
+                    <label for="lastname">Last Name*</label><input id="lastname" type="text" placeholder="last name" minlength="1" value="" required autofocus>
+
+                    <label for="phone-no">Phone No</label><input placeholder="enter 10-digit phone no" pattern="[1-9]{1}[0-9]{9}" minlength="10" maxlength="10" id="phone-no" type="tel" value="your number" autofocus>
+
+                    <label for="email-id">Email ID*</label><input id="email-id" type="email" placeholder="something@gmail.com" value="" required autofocuss>
+
+                    <label for="order-code">Order Code*</label><input id="order-code" maxlength="4" type="text" placeholder="enter your 4-digit order no" value="" required autofocus>
+
+                    <label for="massege">Massege</label><textarea id="massege" cols="30" rows="10" placeholder="messege goes here..." value="" autofocus></textarea>
+
+                    <button type="submit" value="submit">submit</button>
+                </fieldset>
+            </form>
+            <!--HTML5 FORM VALIDATION-->
+
+        </div>
+    </section>
+
+    <div class="back-to-top" title="Back-to-top">
+        <a href="#top">top</a>
+    </div>
+
+    <footer>
+        <p>@copyright information</p>
+    </footer>
+</body>
+<script type="text/javascript" src="../jQuery-library/jquery.js"></script>
+<script type="text/javascript" src="../home-page/index.js"></script>
+
+</html>

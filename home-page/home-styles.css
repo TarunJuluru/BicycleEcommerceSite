@@ -1,0 +1,259 @@
+html {
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*promotion starts*/
+
+#promotion {
+    padding: 1rem 0rem;
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    display: none;
+}
+
+#promotion p {
+    font-size: 1rem;
+    text-align: center;
+    font-family: lato;
+    font-weight: 200;
+    word-spacing: 0.1rem;
+}
+
+/*promotion ends*/
+
+/*header-image starts*/
+
+.header .image {
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/header/header-image-4.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    z-index: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.heading h2 {
+    position: relative;
+    z-index: 0;
+    padding: 1.6rem 1.4rem;
+    background-color: rgba(242, 242, 242, 0.8);
+    font-weight: 200;
+    word-spacing: 0.2rem;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 40px;
+}
+
+.heading p {
+    background-color: rgba(65, 122, 255, 1.0);
+    color: rgba(242, 242, 242, 1.00);
+    padding: 1.2rem;
+    text-align: center;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
+/*header-image ends*/
+
+/*main section declarations*/
+
+main {
+    /*    background-color: #FF5E61;*/
+    margin-top: 6rem;
+}
+
+section {
+    /*        background-color: #28FF8A;*/
+    margin-top: 4rem;
+}
+
+main section #products,
+#blog {
+    /*    background-color: rgba(242,242,242,1.0);*/
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+}
+
+main section #products,
+#blog h2 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+hr {
+    width: 10%;
+    margin: 0 auto;
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+}
+
+/*main section declarations*/
+
+/*main section starts*/
+
+/*garelly starts*/
+
+main section #products .gallery {
+    /*    text-align: center;*/
+    margin: 0 auto;
+    width: 100%;
+    /*
+    -webkit-column-count: 3;
+    column-count: 3;
+*/
+    padding: 2rem;
+    height: auto;
+
+    display: block;
+    font-size: 0;
+}
+
+main section #products .gallery figure {
+    padding: 1rem;
+    opacity: 1.0;
+    position: relative;
+    display: inline-block;
+    width: 30%;
+}
+
+main section #products .gallery figure figcaption {
+    display: inline-block;
+    background-color: rgba(65, 122, 255, 0.8);
+    padding: .6rem 0rem;
+    color: rgba(47, 47, 47, 1.00);
+    font-size: 0.6rem;
+    width: 50%;
+    color: #fff;
+}
+
+main section #products .gallery figure figcaption:nth-child(2) {
+    display: inline-block;
+    background-color: rgb(47, 47, 47);
+    padding: .6rem 0rem;
+    color: rgba(47, 47, 47, 1.00);
+    font-size: 0.6rem;
+    width: 50%;
+    color: #fff;
+}
+
+main section #products .gallery figure img {
+    width: 100%;
+    height: auto;
+}
+
+@media only screen and (max-width: 1200px) {
+    main section #products .gallery figure {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    main section #products .gallery figure {
+        width: 100%;
+    }
+}
+
+/*garelly ends*/
+
+/*blog starts*/
+
+main section #blog article {
+    -webkit-column-count: 2;
+    column-count: 2;
+    -webkit-column-gap: 4rem;
+    column-gap: 4rem;
+    padding: 4rem;
+}
+
+main section #blog article .blog-info h4 {
+    font-size: 1.4rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+main section #blog article .blog-info p {
+    font-size: 1rem;
+    font-family: lato;
+    font-weight: 200;
+    line-height: 2rem;
+}
+
+main section #blog article img {
+    width: 100%;
+    height: auto;
+    /*	border-radius: .8rem;*/
+}
+
+main section #blog article .read-more {
+    width: 400px;
+    margin-top: 1rem;
+}
+
+main section #blog article .read-more a {
+    text-decoration: none;
+    color: rgba(65, 122, 255, 1.0);
+}
+
+main section #blog article .read-more a:hover {
+    color: rgba(65, 122, 255, 1.0);
+    text-decoration: underline;
+}
+
+/*blog ends*/
+
+/*main section ends*/
+
+@media only screen and (max-width: 1420px) {
+    main section #blog article {
+        -webkit-column-count: 1;
+        column-count: 1;
+        padding: 4rem;
+    }
+    main section #blog article .blog-image {
+        margin-bottom: 4rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    main section #blog article {
+        padding: 2rem;
+    }
+    main section #blog article .blog-info p {
+        font-size: 1rem;
+        line-height: 1.4rem;
+    }
+}
+
+footer {
+    background-color: rgba(47, 47, 47, 1.00);
+    color: rgba(242, 242, 242, 1.0);
+    height: 4rem;
+    line-height: 4rem;
+    text-align: center;
+}
+
+.active {}

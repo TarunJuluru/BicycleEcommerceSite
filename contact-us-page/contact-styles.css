@@ -1,0 +1,138 @@
+html {
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    background-color: #f2f2f2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+h2 {
+    font-weight: 200;
+    word-spacing: 0.2rem;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 40px;
+    margin-top: 14rem;
+}
+
+hr {
+    width: 20%;
+    margin: 0 auto;
+    margin-top: 2rem;
+    margin-bottom: 6rem;
+}
+
+section .container {
+    display: block;
+    width: 40%;
+    margin: 0 auto;
+}
+
+section .container p.welcome {
+    width: 80%;
+    margin: 2rem auto;
+    color: #2f2f2f;
+}
+
+section .container form {
+    width: 100%;
+    display: block;
+}
+
+section .container form fieldset {
+    border: none;
+    padding: 4rem 3rem;
+    background-color: rgba(186, 186, 186, 0.2);
+    margin-bottom: 4rem;
+    -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+section .container form fieldset legend {
+    background-color: rgb(0, 185, 64);
+    padding: .4rem;
+    font-size: .6rem;
+    letter-spacing: .2rem;
+    color: #fff;
+}
+
+section .container form label {
+    display: block;
+    width: 100%;
+    font-size: .9rem;
+    color: #2f2f2f;
+}
+
+section .container form input {
+    width: 100%;
+    display: block;
+    padding: .8rem;
+    margin-bottom: 2rem;
+    margin-top: .8rem
+}
+
+section .container form input:valid {
+    border: 2px solid rgb(0, 185, 64);
+}
+
+section .container form input:focus:invalid {
+    border: 2px solid red;
+}
+
+section .container form input:focus {
+    border: 2px solid rgb(0, 185, 64);
+}
+
+
+section .container form input[placeholder] {
+    text-transform: capitalize;
+}
+
+section .container form textarea {
+    width: 100%;
+    display: block;
+    margin-bottom: 2rem;
+    margin-top: .8rem
+}
+
+section .container form button {
+    display: block;
+    padding: .6rem 2rem;
+    font-family: lato;
+    text-transform: capitalize;
+    background-color: rgba(65, 122, 255, 1.0);
+    border: none;
+    color: #fff;
+    text-align: center;
+}
+
+section .container form button:hover {
+    background-color: rgb(0, 185, 64);
+    -webkit-transition: background-color 300ms ease-in-out 0s;
+    transition: background-color 300ms ease-in-out 0s;
+    cursor: pointer;
+}
+
+
+footer {
+    background-color: rgba(47, 47, 47, 1.00);
+    color: rgba(242, 242, 242, 1.0);
+    height: 4rem;
+    line-height: 4rem;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1024px) {
+    h2 {
+        margin-top: 10rem;
+    }
+    section .container {
+        width: 60%;
+    }
+}

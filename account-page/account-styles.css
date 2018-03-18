@@ -1,0 +1,35 @@
+html {
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    background-color: #f2f2f2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+h2 {
+    font-weight: 200;
+    word-spacing: 0.2rem;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 40px;
+    margin-top: 14rem;
+}
+
+hr {
+    width: 20%;
+    margin: 0 auto;
+    margin-top: 2rem;
+    margin-bottom: 6rem;
+}
+
+section article {
+    display: block;
+    width: 40%;
+    margin: 0 auto;
+}
