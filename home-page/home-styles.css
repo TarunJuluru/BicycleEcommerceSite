@@ -117,13 +117,8 @@ hr {
 /*garelly starts*/
 
 main section #products .gallery {
-    /*    text-align: center;*/
     margin: 0 auto;
     width: 100%;
-    /*
-    -webkit-column-count: 3;
-    column-count: 3;
-*/
     padding: 2rem;
     height: auto;
 
@@ -256,4 +251,3 @@ footer {
     text-align: center;
 }
 
-.active {}

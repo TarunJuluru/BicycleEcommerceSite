@@ -79,15 +79,9 @@ $(document).ready(function () {
 
         //scroll animation on click
         $backToTop.on("click", function () {
-            $("html, body").animate({
-                scrollTop: "0"
-            }, 1000);
+            $("html, body").stop().animate({scrollTop:0}, 1000);
             return false;
         });
-
-        if ($(this).scrollTop() < 1) {
-            location.reload();
-        }
     });
-
+    
 });

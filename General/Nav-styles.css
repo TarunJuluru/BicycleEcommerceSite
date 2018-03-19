@@ -147,7 +147,7 @@ nav ul li.active a {
 
 .back-to-top a:hover {
     opacity: 1;
-    transition: opacity 800ms ease-in 0s;
+    transition: opacity 400ms ease-in 0s;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -210,8 +210,12 @@ nav ul li.active a {
         margin: 8px 0px 0px 0px;
     }
     nav ul#on-click-menu-list li {
-        padding: 3rem 0rem;
+        padding: 4vh 0rem;
     }
+}
+
+@media only screen and (max-width: 768px) {
+    
 }
 
 /*navigation ends*/
