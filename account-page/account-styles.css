@@ -28,8 +28,156 @@ hr {
     margin-bottom: 6rem;
 }
 
-section article {
-    display: block;
-    width: 40%;
+section .container {
+    width: 50%;
     margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+section .container .login {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    padding: 2rem;
+    background-color: #fff;
+}
+
+section .container .signup {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    padding: 2rem;
+    background-color: rgba(65, 122, 255, 1.0);
+}
+
+section .container .signup h4.signup-hd {
+    letter-spacing: .1rem;
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 1.4rem;
+}
+
+section .container .signup p {
+    color: #fff;
+    font-size: .9rem;
+    margin-bottom: 1.4rem;
+}
+
+section .container .signup ul {
+    list-style: inside;
+    list-style-type: disc;
+    color: #fff;
+    font-size: .9rem;
+    margin-bottom: 1.8rem;
+}
+
+section .container .signup li {
+    margin-bottom: .4rem;
+}
+
+section .container .signup button {
+    padding: .6rem 1rem;
+    border: none;
+    background-color: #fff;
+    border-radius: 4px;
+    -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, .2);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, .2);
+}
+
+section .container .signup button a {
+    text-decoration: none;
+    color: rgba(65, 122, 255, 1.0);
+    text-transform: uppercase;
+    font-size: .6rem;
+    font-weight: 600;
+}
+
+section .container .login h4.login-hd {
+    letter-spacing: .1rem;
+    color: #000000;
+    font-weight: 400;
+    margin-bottom: 1.4rem;
+}
+
+section .container .login form label {
+    width: 100%;
+    font-size: .9rem;
+    display: block;
+}
+
+
+section .container .login form input {
+    width: 90%;
+    padding: .6rem 0rem;
+    margin: .8rem 0rem 1.4rem;
+    display: block;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, .2);
+}
+
+section .container .login form input[placeholder] {
+    color: rgba(0, 0, 0, .2);
+    text-indent: 1rem;
+}
+
+section .container .login form button {
+    padding: .6rem 1rem;
+    border: none;
+    background-color: #fff;
+    border-radius: 4px;
+    border: 1px solid rgba(65, 122, 255, 1.0);
+}
+
+section .container .login form button a {
+    text-decoration: none;
+    color: rgba(65, 122, 255, 1.0);
+    text-transform: uppercase;
+    font-size: .6rem;
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 1500px) {
+    section .container {
+        width: 60%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+}
+
+@media only screen and (max-width: 1500px) {
+    section .container {
+        width: 60%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    section .container {
+        width: 60%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        margin-bottom: 8rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    section .container {
+        width: 90%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+    h2 {
+        margin-top: 8rem;
+    }
 }

@@ -65,6 +65,7 @@ section article .view-info .view-icon img {
 
 section article .view-info .view-icon img.rotate {
     width: 16px;
+    -webkit-transform: rotate(-90deg);
     transform: rotate(-90deg);
 }
 
@@ -114,17 +115,16 @@ footer {
 
     section article {
         width: 60%;
-    } 
-    
+    }
+
     section article .view-info h4 {
         width: 100%;
         display: block;
     }
-    
+
     section article .view-info .view-icon {
         display: block;
         width: 100%;
         padding: .6rem;
     }
 }
-

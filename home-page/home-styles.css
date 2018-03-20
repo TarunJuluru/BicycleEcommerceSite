@@ -36,7 +36,7 @@ html {
 .header .image {
     width: 100%;
     height: 100vh;
-    background-image: url(images/header/header-image-4.jpeg);
+    background-image: url(images/header/header-image-11.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -53,22 +53,27 @@ html {
     justify-content: center;
 }
 
+.heading {
+    margin-top: 4rem;
+}
+
 .heading h2 {
     position: relative;
     z-index: 0;
-    padding: 1.6rem 1.4rem;
+    padding: 2rem 1.4rem;
     background-color: rgba(242, 242, 242, 0.8);
     font-weight: 200;
     word-spacing: 0.2rem;
     text-transform: uppercase;
     text-align: center;
     line-height: 40px;
+    color: rgb(65, 122, 255);
 }
 
 .heading p {
-    background-color: rgba(65, 122, 255, 1.0);
-    color: rgba(242, 242, 242, 1.00);
-    padding: 1.2rem;
+    background-color: rgb(65, 122, 255);
+    color: rgba(242, 242, 242, 1.0);
+    padding: .8rem 0rem;
     text-align: center;
     font-weight: 400;
     text-transform: uppercase;
@@ -250,4 +255,3 @@ footer {
     line-height: 4rem;
     text-align: center;
 }
-
