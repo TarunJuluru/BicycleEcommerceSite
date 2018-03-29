@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>product-1</title>
+    <link rel="stylesheet" href="css/product-1.css">
+    <link rel="stylesheet" href="../General/Nav-styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+</head>
+
+<body>
+    <!--header starts-->
+    <header id="top">
+
+        <!--navigation starts-->
+        <nav>
+            <div id="on-click-menu-icon">
+                <div class="logo"><a href="../index.html">iride</a></div>
+                <div class="hamburger"><img class="open" src="../home-page/images/icons/hamburger-menu.png" alt="menu-icon">
+                    <img class="close" src="../home-page/images/icons/menu-close.png" alt="menu-icon"></div>
+            </div>
+            <ul id="on-click-menu-list">
+                <li><a href="../index.html">home</a></li>
+                <li><a href="../about-us-page/about.html">about</a></li>
+                <li class="dropbox"><a href="../blog-page/blog.html">blog</a>
+                    <ul class="dropdown">
+                        <li class="dp-list"><a href="../blog-page/blog.html">blog-1</a></li>
+                        <li class="dp-list"><a href="../blog-page/blog.html">blog-2</a></li>
+                        <li class="dp-list"><a href="../blog-page/blog.html">blog-3</a></li>
+                    </ul>
+                </li>
+                <li><a href="../contact-us-page/contact.html">contact</a></li>
+                <li class="cart"><img src="../home-page/images/icons/shopping-cart-icon-light.png" alt="shopping cast">
+                    <sup id="add-cart">0</sup>
+                </li>
+                <li class="account"><a href="../account-page/account.html">account</a></li>
+            </ul>
+        </nav>
+        <!--navigation ends-->
+    </header>
+    <!--header ends-->
+
+    <section>
+        <div class="container">
+            <div class="product-1">
+                <div class="product-1-images">
+                    <div class="image-view">
+                        <div class="product-view">
+                            <img id="product-viewer" src="images/product-1-phase.jpeg" alt="product">
+                        </div>
+                    </div>
+                    <div class="image-tumbnail">
+                        <div class="product-phase">
+                            <img src="images/product-1-phase-1.jpeg" id="phase1" onmouseover="viewer(this.src)" alt="product-1">
+                        </div>
+
+                        <div class="product-phase">
+                            <img src="images/product-1-phase-2.jpeg" id="phase2" onmouseover="viewer(this.src)" alt="product-2">
+                        </div>
+
+                        <div class="product-phase">
+                            <img src="images/product-1-phase-3.jpeg" id="phase3" onmouseover="viewer(this.src)" alt="product-3">
+                        </div>
+
+                        <div class="product-phase">
+                            <img src="images/product-1-phase-4.jpeg" id="phase4" onmouseover="viewer(this.src)" alt="product-4">
+                        </div>
+                    </div>
+                </div>
+                <div class="product-1-details">
+                    <h1>Uptown</h1>
+                    <p class="price">$199</p>
+                    <h4>Product Details:</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam quasi laboriosam, odit quisquam dolorem iure earum labore fugiat saepe ab. Corrupti perspiciatis cumque perferendis architecto iusto. Voluptates, molestias facere doloribus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                    <button onclick="cartDes()">-</button><button><span id="result">0</span></button><button onclick="cartIns()">+</button>
+                    <div><button class="cart-btn" onclick="cartIns()">Add to Cart</button><button class="view-btn">View Cart</button></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="back-to-top" title="Back-to-top">
+        <a href="#top">top</a>
+    </div>
+
+    <footer>
+        <p>@copyright information</p>
+    </footer>
+
+</body>
+<script type="text/javascript" src="../jQuery-library/jquery.js"></script>
+<script type="text/javascript" src="../jQuery-library/jquery-ui.js"></script>
+<script type="text/javascript" src="../home-page/index.js"></script>
+<script type="application/javascript" src="product.js"></script>
+
+</html>
