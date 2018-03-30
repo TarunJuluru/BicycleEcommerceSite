@@ -181,7 +181,8 @@ footer {
 
 @media only screen and (max-width: 480px) {
     section .container {
-        width: 80%;
+        width: 100%;
+        padding: 0rem 1rem;
     }
     section .container .product-1 button.cart-btn {
         width: 100%;
