@@ -49,22 +49,29 @@
             <p class="welcome">Want to give your customers an easy way of getting in touch with you? This clean and simple form does just that.</p>
 
             <!--HTML5 FORM VALIDATION-->
-            <form action="" method="">
+            <form method="POST" action="https://formspree.io/tarun.design99@gmail.com>
                 <fieldset>
                     <legend>HTML5 Form Validation</legend>
-                    <label for="firstname">First Name*</label><input id="firstname" type="text" placeholder="sur name" minlength="1" value="" required autofocus>
+                                        
+                    <label for="firstname">First Name*</label>
+                    <input id="firstname" type="text" placeholder="sur name" name="fname" minlength="1" value="" required autofocus>
 
-                    <label for="lastname">Last Name*</label><input id="lastname" type="text" placeholder="last name" minlength="1" value="" required autofocus>
+                    <label for="lastname">Last Name*</label>
+                    <input id="lastname" type="text" placeholder="last name" name="lname" minlength="1" value="" required autofocus>
 
-                    <label for="phone-no">Phone No</label><input placeholder="enter 10-digit phone no" pattern="[1-9]{1}[0-9]{9}" minlength="10" maxlength="10" id="phone-no" type="tel" value="your number" autofocus>
+                    <label for="phone-no">Phone No</label>
+                    <input placeholder="enter 10-digit phone no" pattern="[1-9]{1}[0-9]{9}" minlength="10" maxlength="10" id="phone-no" name="phno" type="tel" value="your number" autofocus>
 
-                    <label for="email-id">Email ID*</label><input id="email-id" type="email" placeholder="something@gmail.com" value="" required autofocuss>
+                    <label for="email-id">Email ID*</label>
+                    <input id="email-id" type="email" name="email" placeholder="something@gmail.com" value="" required autofocuss>
 
-                    <label for="order-code">Order Code*</label><input id="order-code" maxlength="4" type="text" placeholder="enter your 4-digit order no" value="" required autofocus>
+                    <label for="order-code">Order Code*</label>
+                    <input id="order-code" name="ocode" maxlength="4" type="text" placeholder="enter your 4-digit order no" value="" required autofocus>
 
-                    <label for="massege">Massege</label><textarea id="massege" cols="30" rows="10" placeholder="messege goes here..." value="" autofocus></textarea>
+                    <label for="massege">Massege</label>
+                    <textarea id="massege" name="massege" cols="30" rows="10" placeholder="messege goes here..." value="" autofocus></textarea>
 
-                    <button type="submit" value="submit">submit</button>
+                    <button type="submit" value="send">submit</button>
                 </fieldset>
             </form>
             <!--HTML5 FORM VALIDATION-->
