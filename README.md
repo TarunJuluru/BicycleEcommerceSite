@@ -1,3 +1,3 @@
 # BicycleEcommerceSite
 
-https://tarunjuluru.github.io/BicycleEcommerceSite/
+[Live Preview](https://tarunjuluru.github.io/BicycleEcommerceSite/)
