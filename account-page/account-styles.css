@@ -158,7 +158,7 @@ section .container .login form button a {
 
 @media only screen and (max-width: 1024px) {
     section .container {
-        width: 60%;
+        width: 80%;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -177,6 +177,7 @@ section .container .login form button a {
         display: -ms-flexbox;
         display: flex;
     }
+
     h2 {
         margin-top: 8rem;
     }
